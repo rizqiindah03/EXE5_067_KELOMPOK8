@@ -62,7 +62,21 @@ namespace EXE5_067_KELOMPOK8
             }
             Node display;
             for (display = indah; display != null; display = display.next) ;
+            Console.WriteLine(display.name);
+            Console.WriteLine("\n tekan enter untuk melanjutkan program ");
+            Console.ReadKey();
+        }
+    }
+    class program
+    {
+        static void Main(string[] args)
+        {
+            Queue q = new Queue();
+            char ch;
+            while (true)
+            {
 
+            }
         }
     }
 }
