@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace EXE5_067_KELOMPOK8
 {
-    class Node
+    class QNode
     {
         public string name;
-        public Node next;     
+        public QNode next; 
+        
+        public 
     }
 }
