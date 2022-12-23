@@ -6,11 +6,20 @@ using System.Threading.Tasks;
 
 namespace EXE5_067_KELOMPOK8
 {
-    class QNode
+    class Node
     {
         public string name;
-        public QNode next; 
+        public Node next; 
         
-        public 
+        public Node (string i, Node n)
+        {
+            name = i;
+            next = n;
+        }
+    }
+    class Queue
+    {
+        Node indah, pratiwi;
+        
     }
 }
