@@ -75,7 +75,41 @@ namespace EXE5_067_KELOMPOK8
             char ch;
             while (true)
             {
-
+                try
+                {
+                    Console.Clear();
+                    Console.WriteLine("menu");
+                    Console.WriteLine(" 1. implement enter");
+                    Console.WriteLine(" 2. implement delete");
+                    Console.WriteLine(" 3. display values");
+                    Console.WriteLine(" 4. exit");
+                    Console.Write("\n enter your choice (1-4): ");
+                    ch = Convert.ToChar(Console.ReadLine());
+                    Console.WriteLine();
+                    switch (ch)
+                    {
+                        case '1':
+                            Console.Clear();
+                            q.enter();
+                            break;
+                        case '2':
+                            Console.Clear();
+                            q.delete();
+                            break;
+                        case '3':
+                            Console.Clear();
+                            q.display();
+                            break;
+                        case '4':
+                            return;
+                        default:
+                            {
+                                Console.WriteLine(" invalid option !");
+                            }
+                            break;
+                    }
+                }
+               
             }
         }
     }
