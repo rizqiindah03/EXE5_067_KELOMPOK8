@@ -20,6 +20,26 @@ namespace EXE5_067_KELOMPOK8
     class Queue
     {
         Node indah, pratiwi;
-        
+        public Queue()
+        {
+            indah = pratiwi = null;
+        }
+        public void enter()
+        {
+            string data;
+            Node newnode = new Node();
+            Console.Write("Masukkan input : ");
+            data = Console.ReadLine();
+            newnode.name = data;
+            newnode.next = null;
+            if (indah == null)
+            {
+                indah = newnode;
+                pratiwi = newnode;
+                return;
+            }
+
+        }
+            
     }
 }
