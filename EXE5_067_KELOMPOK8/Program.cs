@@ -9,6 +9,6 @@ namespace EXE5_067_KELOMPOK8
     class Node
     {
         public string name;
-        public Node next;    
+        public Node next;     
     }
 }
