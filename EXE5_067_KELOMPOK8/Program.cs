@@ -38,8 +38,31 @@ namespace EXE5_067_KELOMPOK8
                 pratiwi = newnode;
                 return;
             }
+            pratiwi.next = newnode;
+        }
+        public void delete()
+        {
+            if (indah == null)
+            {
+                Console.WriteLine("tidak ada data didalam antrian");
+                return;
+            }
+            Console.WriteLine("data yang dihapus " + indah.name);
+            Console.ReadKey();
+            indah = indah.next;
+            if (indah == null)
+                pratiwi = null;
+        }
+        public void display()
+        {
+            if (indah == null)
+            {
+                Console.WriteLine("tidak ada data dalam antrian");
+                return;
+            }
+            Node display;
+            for (display = indah; display != null; display = display.next) ;
 
         }
-            
     }
 }
