@@ -86,7 +86,7 @@ namespace EXE5_067_KELOMPOK8
                     Console.Write("\n enter your choice (1-4): ");
                     ch = Convert.ToChar(Console.ReadLine());
                     Console.WriteLine();
-                    switch (ch)
+                    switch (ch) 
                     {
                         case '1':
                             Console.Clear();
