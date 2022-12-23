@@ -109,7 +109,10 @@ namespace EXE5_067_KELOMPOK8
                             break;
                     }
                 }
-               
+                catch
+                {
+                    Console.WriteLine("silahkan periksa kembali data yang dimasukan!");
+                }
             }
         }
     }
